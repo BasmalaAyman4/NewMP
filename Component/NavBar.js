@@ -48,7 +48,9 @@ const NavBar = () => {
   const [showResponsive, setShowResponsive] = useState(false);
   const handleCloseResponsive = () => setShowResponsive(false);
   const handleShowResponsive = () => setShowResponsive(true);
- 
+  const { locale, locales, push } = useRouter()
+  const router = useRouter()
+  const { pathname, asPath, query } = router
   console.log(session);
   useEffect(() => {
     setIsClient(true);
@@ -95,9 +97,7 @@ const NavBar = () => {
       router.push("/");
     });
   };
-  const { locale, locales, push } = useRouter()
-  const router = useRouter()
-  const { pathname, asPath, query } = router
+
   const handleLanguageChange = (locale) => {
 
     push({ pathname, query }, asPath, { locale: locale })
