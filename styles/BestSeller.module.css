@@ -1,0 +1,16 @@
+.category__cards,
+ .category__center {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-top: 30px
+ }
+ .category__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    justify-content: center;
+    column-gap: 65px
+  }
+ 

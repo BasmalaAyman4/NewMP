@@ -1,0 +1,37 @@
+.banner {
+    width: 100% !important
+}
+
+.feature__sec {
+    margin-top: 70px
+}
+
+.feature__title {
+    text-align: center;
+    font-size: 60px
+}
+.feature__title:dir(ltr){
+    font-size: 40px;
+}
+.cards {
+    margin: 20px 70px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+@media (min-width:0px) and (max-width:600px) {
+    .banner{
+        height: 100%;
+    }
+    .feature__sec{
+        margin-top: 30px;
+    }
+    .feature__title{
+        font-size: 40px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin: 10px 50px;
+    }
+}
